@@ -12,6 +12,8 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Put;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
+import br.com.caelum.vraptor.Validator;
+import br.com.caelum.vraptor.validator.ValidationMessage;
 import dao.UserDao;
 
 @Resource
@@ -20,11 +22,13 @@ public class UsersController {
 	private final UserDao userDao;
 	private final Session session;
 	private final Result result;
+	private final Validator validator;
 	
-	public UsersController(UserDao userDao, Result result, Session session){
+	public UsersController(UserDao userDao, Result result, Session session, Validator validator){
 		this.userDao=userDao;
 		this.session=session;
 		this.result=result;
+		this.validator=validator;
 	}
 	
 

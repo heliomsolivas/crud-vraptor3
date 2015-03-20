@@ -13,5 +13,9 @@
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
 	<mapping class="model.User" />
+	<mapping class="model.Telefones" />
+	<mapping class="model.FormacaoAcademica" />
+	<mapping class="model.Cursos" />
+	<mapping class="model.Idiomas" />
   </session-factory>
 </hibernate-configuration>

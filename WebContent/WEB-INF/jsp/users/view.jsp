@@ -14,7 +14,13 @@ Nome do usuário selecionado: ${user.nome}
 <form method="post"  action="<c:url value="/users" />" name="alterForm">
 <label for="user.nome">Nome do usuário:</label>
 <input type="text" name="user.nome" value="${user.nome}"/>
-<input type="text" name="user.id" value="${user.id}"/>
+<input type="text" name="user.nome" value="${user.numeroRg}"/>
+<input type="text" name="user.nome" value="${user.numeroCpf}"/>
+<input type="text" name="user.nome" value="${user.estado}"/>
+<input type="text" name="user.nome" value="${user.email}"/>
+
+
+<input type="hidden" name="user.id" value="${user.id}"/>
 <input type="hidden" name="_method" value="put"/>
 <input type="submit" value="Alterar">
 </form>

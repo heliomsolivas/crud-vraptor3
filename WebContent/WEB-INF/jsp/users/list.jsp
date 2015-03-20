@@ -20,6 +20,10 @@
 <tr>
 <td><a href="<c:url value="/users/${user.id}"/>"></a></td>
 <td>${user.nome}</td>
+<td>${user.numeroRg}</td>
+<td>${user.numeroCpf}</td>
+<td>${user.estado}</td>
+<td>${user.email}</td>
 <td><a href="<c:url value="/users/${user.id}"/>">Editar</a></td>
 <td><a href="<c:url value="/users/delete/${user.id}"/>">Excluir</a></td>
 </tr>
@@ -39,6 +43,14 @@
 <legend>Novo Usuário</legend>
 <label for="user.nome">Nome</label>
 <input type="text" name="user.nome">
+<label for="user.nome">RG</label>
+<input type="text" name="user.numeroRg">
+<label for="user.nome">CPF</label>
+<input type="text" name="user.numeroCpf">
+<label for="user.nome">Estado</label>
+<input type="text" name="user.estado">
+<label for="user.nome">E-mail</label>
+<input type="text" name="user.email">
 <input type="submit" value="Cadastrar">
 </fieldset>
 
